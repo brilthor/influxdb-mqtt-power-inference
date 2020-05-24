@@ -1,14 +1,16 @@
 version: '3'
 services:
-  apcupsd-influxdb-exporter:
+  influxdb-mqtt-power:
     image: brilthor/influxdb-mqtt-power
     restart: always
+    volumes:
+      - ./config.yaml:/config/config.yaml
     environment:
       MQTT_HOST: localhost # MQTT server
       MQTT_USER: # optional, defaults to empty
       MQTT_PASSWORD:  # optional, defaults to empty
       INFLUXDB_HOST: localhost # host running influxdb
-      INFLUXDB_DATABASE: apcupsd # db name for influxdb. optional, defaults to apcupsd
+      INFLUXDB_DATABASE: power # db name for influxdb. optional, defaults to power
       INFLUXDB_USER: # optional, defaults to empty
       INFLUXDB_PASSWORD: # optional, defaults to empty
       INFLUXDB_PORT: 8086 # optional, defaults to 8086

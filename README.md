@@ -52,6 +52,7 @@ mqtt_loads:
 docker run --rm  -d --name="influxdb-mqtt-power" \
     -e "INFLUXDB_HOST=10.0.1.11" \
     -e "MQTT_HOST=10.0.1.11" \
+    -v $(pwd)/config.yaml:/config/config.yaml\
     -t brilthor/influxdb-mqtt-power
 ```
 
