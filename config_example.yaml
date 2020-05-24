@@ -1,0 +1,13 @@
+scheduled_loads:
+  - measurement_name: "my_perpetual"
+    power: 48
+mqtt_loads:
+  - measurement_name: "my_switch"
+    topic: "mqtt_topic/for/on/off"
+    power: 76
+  - measurement_name: "my_dimmer"
+    topic: "mqtt_topic/for/on/off"
+    dimmer:
+      topic: "mqtt_topic/for/dim_value"
+      range: 255
+    power: 86
