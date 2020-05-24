@@ -20,7 +20,7 @@ These are all the available environment variables, along with some example value
 | MQTT_USER | myuser | optional, defaults to empty |
 | MQTT_PASSWORD | pass | optional, defaults to empty |
 | INFLUXDB_HOST | 192.168.1.101 | host running influxdb |
-| INFLUXDB_DATABASE | apcupsd | db name for influxdb. optional, defaults to apcupsd |
+| INFLUXDB_DATABASE | power | db name for influxdb. optional, defaults to power |
 | INFLUXDB_USER | myuser | optional, defaults to empty |
 | INFLUXDB_PASSWORD | pass | optional, defaults to empty |
 | INFLUXDB_PORT |  8086 | optional, defaults to 8086 |
